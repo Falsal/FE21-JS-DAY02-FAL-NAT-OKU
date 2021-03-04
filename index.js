@@ -66,7 +66,7 @@ sumAverage(3,4,5)
 function timeConvert(minutes) {
   let hours = Math.floor(minutes / 60); // gives the smaller number after komma
   let remainder = minutes % 60;
-
+  
   document.write(`${minutes} minutes = ${hours} hour(s) and ${remainder} minutes`);
 }
 document.write('<br>');
@@ -77,3 +77,24 @@ console.log(Math.ceil(1.7)); // gives the higher number after komma
 console.log(Math.ceil(1.3));
 console.log(Math.floor(1.7));*/
 
+
+// Challenge ()
+// input number (calling the function with a param)
+function atm(amount){
+  let R100= Math.floor(amount/100);
+  console.log(` R100: ${R100}`)
+  let remaining100 = amount % 100;
+  console.log(remaining100)
+  let R50= Math.floor(remaining100/50);
+  let remaining50 = remaining100 % 50;
+  console.log(` remaining50: ${remaining50}`)
+  console.log(` R50: ${R50}`)
+  let R20= Math.floor(remaining50/20);
+  let remaining20 = remaining50 % 20;
+  console.log(` R20: ${R20}`)
+  let R10= Math.floor(remaining20/10);
+  console.log(` R10: ${R10}`)
+  
+  
+}
+atm(280)
