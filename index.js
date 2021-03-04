@@ -60,3 +60,20 @@ document.write(`Sum of grades is ${sumOf} and Average is ${averageOf}`)
 }
 
 sumAverage(3,4,5)
+
+
+//1 Advanced | Time Convert
+function timeConvert(minutes) {
+  let hours = Math.floor(minutes / 60); // gives the smaller number after komma
+  let remainder = minutes % 60;
+
+  document.write(`${minutes} minutes = ${hours} hour(s) and ${remainder} minutes`);
+}
+document.write('<br>');
+timeConvert(200);
+
+/* 
+console.log(Math.ceil(1.7)); // gives the higher number after komma
+console.log(Math.ceil(1.3));
+console.log(Math.floor(1.7));*/
+
