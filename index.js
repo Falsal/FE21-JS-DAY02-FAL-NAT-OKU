@@ -84,10 +84,8 @@ function atm(amount){
   let R100= Math.floor(amount/100);
   console.log(` R100: ${R100}`)
   let remaining100 = amount % 100;
-  console.log(remaining100)
   let R50= Math.floor(remaining100/50);
   let remaining50 = remaining100 % 50;
-  console.log(` remaining50: ${remaining50}`)
   console.log(` R50: ${R50}`)
   let R20= Math.floor(remaining50/20);
   let remaining20 = remaining50 % 20;
@@ -95,6 +93,6 @@ function atm(amount){
   let R10= Math.floor(remaining20/10);
   console.log(` R10: ${R10}`)
   
-  
+  console.log(`Hundred : ${R100}, Fifty: ${R50} , Twenty: ${R20}, Ten: ${R10}`)
 }
 atm(280)
