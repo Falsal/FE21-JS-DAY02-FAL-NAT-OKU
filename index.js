@@ -48,3 +48,15 @@ let area = calculationAreaVolume(2,7,1)[0];
 let volume = calculationAreaVolume(10,7,1)[1];
 
 console.log(`The area of the box is: ${area}, The volume of the box is: ${volume}`);
+
+//Intermediary 1 | CAPITALIZE
+((precapit)=> console.log(`${precapit[0].toUpperCase() + precapit.substring(1)}`))('i am a web developer')
+
+//Intermediary 2 | AVERAGE GRADE
+function sumAverage(a,b,c){
+let sumOf=a+b+c;
+let averageOf=sumOf/3;
+document.write(`Sum of grades is ${sumOf} and Average is ${averageOf}`)
+}
+
+sumAverage(3,4,5)
